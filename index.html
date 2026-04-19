@@ -17,7 +17,7 @@
 
     <!-- LOGO BANNER -->
     <div class="logo-banner">
-        <img src="IMG/S&D SpookySpoodz.png" alt="S&D SpookySpoodz Logo">
+        <img src="IMG/S_D_SpookySpoodz-removebg-preview.png" alt="S&D SpookySpoodz Logo">
     </div>
 
     <!-- NAV -->
@@ -95,10 +95,10 @@
         <h2><i class="fab fa-youtube"></i> Watch Our Spoods</h2>
 
         <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FuzJ-OlL_Fk?si=gBjx6Ik-o_Bo1oVf"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/FuzJ-OlL_Fk?autoplay=1&mute=1&loop=1&playlist=FuzJ-OlL_Fk&controls=0&modestbranding=1&rel=0"
+            title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
         </div>
 
         <a href="#" class="yt-btn">
@@ -111,7 +111,6 @@
         <h2>Follow Us</h2>
 
         <div class="social-buttons">
-            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
             <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
             <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
         </div>
@@ -119,8 +118,22 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 S&D SpookySpoodz • All Rights Reserved</p>
+        <p>© 2026 S&D SpookySpoodz • <a href="#">Return Policy</a></p>
     </footer>
+
+    <script>
+        const iframe = document.querySelector("iframe");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    iframe.src = iframe.src; // reloads → triggers autoplay
+                }
+            });
+        }, { threshold: 0.6 });
+
+        observer.observe(iframe);
+    </script>
 
 </body>
 
