@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&D SpookySpoodz</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- LOGO BANNER -->
+    <div class="logo-banner">
+        <img src="IMG/S&D SpookySpoodz.png" alt="S&D SpookySpoodz Logo">
+    </div>
+
+    <!-- NAV -->
+    <nav>
+
+        <!-- HAMBURGER BUTTON -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- NAV LINKS -->
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Available Spiders</a></li>
+            <li><a href="#">Enclosures</a></li>
+            <li><a href="#">Spider Care Guide</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<!-- SCRIPT -->
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Regal Jumping Spiders</h2>
+        <p>Captive bred • Healthy • Beautiful morphs</p>
+
+        <div class="featured-card">
+            <img src="IMG/female_regal.png" alt="Regal Jumping Spider">
+            <h3>Featured: Female Regal</h3>
+            <p class="price">$25</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>Beyond the Ordinary</h2>
+
+        <p>
+            Hi, I’m Destinee — a SAHM who found an unexpected passion in the tiniest, most curious moment.
+            During a simple garage sale, a little jumping spider crossed my path, and something just clicked.
+        </p>
+
+        <p>
+            That spark turned into research, new enclosures, and eventually caring for a growing collection of
+            slings — each one deepening our passion for the hobby.
+        </p>
+
+        <p>
+            What began as a chance encounter has grown into a family project and a dream. We now focus on
+            raising healthy spiders and creating quality enclosures.
+        </p>
+
+        <p>
+            It’s been an unexpected journey, and we’re excited to share it with you.
+        </p>
+    </section>
+
+    <!-- YOUTUBE -->
+    <section class="youtube">
+        <h2><i class="fab fa-youtube"></i> Watch Our Spoods</h2>
+
+        <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FuzJ-OlL_Fk?si=gBjx6Ik-o_Bo1oVf"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <a href="#" class="yt-btn">
+            <i class="fab fa-youtube"></i> Subscribe on YouTube
+        </a>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="social">
+        <h2>Follow Us</h2>
+
+        <div class="social-buttons">
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 S&D SpookySpoodz • All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
