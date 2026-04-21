@@ -685,3 +685,19 @@ CONTACT SECTION
     color: #d6a4ff;
     /* soft purple accent */
 }
+
+/* CENTER CARD GRIDS */
+.product-grid,
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* centers cards horizontally */
+    gap: 20px;
+}
+
+/* OPTIONAL: control card width for cleaner layout */
+.product-card {
+    flex: 0 1 280px;
+    /* keeps cards consistent and centered */
+}
