@@ -344,6 +344,40 @@ FEATURE SECTIONS
 }
 
 /* =========================
+CARD ICON STYLE (GLASS + GLOW)
+========================= */
+.card-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 0 12px rgba(255, 150, 255, 0.3);
+}
+
+.card-icon i {
+    font-size: 24px;
+    color: #ffb3ff;
+}
+
+.product-card:hover .card-icon {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 150, 255, 0.6);
+    transition: 0.3s ease;
+}
+
+/* =========================
 SERVICE CARD TWEAKS
 ========================= */
 
@@ -576,4 +610,78 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* =========================
+CONTACT SECTION
+========================= */
+.contact-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* FORM (glass style but toned down) */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 25px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(255, 150, 255, 0.2);
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+
+    outline: none;
+}
+
+/* PLACEHOLDER */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* SELECT TEXT */
+.contact-form select {
+    color: #fff;
+}
+
+/* BUTTON */
+.contact-form button {
+    margin-top: 10px;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto 40px;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+.product-card i {
+    margin-bottom: 10px;
+    color: #d6a4ff;
+    /* soft purple accent */
 }
