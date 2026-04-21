@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Spiders | S&D SpookySpoodz</title>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME (optional consistency) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- LOGO -->
+    <div class="logo-banner">
+        <img src="IMG/S_D_SpookySpoodz-removebg-preview.png" alt="S&D SpookySpoodz Logo">
+    </div>
+
+    <!-- NAVIGATION -->
+    <header>
+    
+        <nav class="navbar">
+    
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- Menu -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="spiders.html">Available Spiders</a></li>
+                <li><a href="enclosures.html">Enclosures</a></li>
+                <li><a href="#">Spider Care Guide</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+    
+        </nav>
+    
+    </header>
+
+    <!-- HERO -->
+    <section class="spiders-hero">
+        <h2>Available Spiders</h2>
+        <p>Each spood has a unique personality — find the one that connects with you.</p>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="product-section">
+
+        <div class="product-grid">
+
+            <!-- SPIDER 1 -->
+            <div class="product-card">
+                <img src="IMG/female_regal.png" alt="Female Regal">
+                <h3><em>Phidippus Regius</em></h3>
+                <p>Female Regal</p>
+                <p class="price">$25</p>
+
+                <div class="product-buttons">
+                    <a href="#" class="btn store-btn">View in Store</a>
+                </div>
+            </div>
+
+            <!-- SPIDER 2 -->
+            <div class="product-card">
+                <img src="IMG/male_regal.webp" alt="Male Regal">
+                <h3><em>Phidippus Regius</em></h3>
+                <p>Male Regal</p>
+                <p class="price">$25</p>
+
+                <div class="product-buttons">
+                    <a href="#" class="btn store-btn">View in Store</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+    <section class="feature">
+        <div class="feature-text">
+            <h2>Personalities that pop</h2>
+            <p>Each spider develops its own quirks and charm, making every one unique.</p>
+        </div>
+    </section>
+
+    <section class="feature alt">
+        <div class="feature-text">
+            <h2>A delicate start, a strong bond</h2>
+            <p>Proper care early on ensures a healthy, thriving companion.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SPIDERS -->
+    <section class="about-spiders">
+
+        <h2>About Our Spiders</h2>
+
+        <div class="about-grid">
+        
+            <div class="product-card about-card">
+                <img src="images/spider-info1.jpg" alt="Jumping Spider Close Up">
+                <h3>Curious & Intelligent</h3>
+                <p>
+                    Jumping spiders are highly visual and interactive, often observing
+                    their surroundings and reacting to movement.
+                </p>
+            </div>
+        
+            <div class="product-card about-card">
+                <img src="images/spider-info2.jpg" alt="Spider Habitat">
+                <h3>Easy to Care For</h3>
+                <p>
+                    With proper humidity, feeding, and ventilation, they are beginner-friendly
+                    and low maintenance pets.
+                </p>
+            </div>
+        
+            <div class="product-card about-card">
+                <img src="images/spider-info3.jpg" alt="Spider Personality">
+                <h3>Unique Personalities</h3>
+                <p>
+                    Each spider develops its own temperament — some bold and curious,
+                    others calm and observant.
+                </p>
+            </div>
+        
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 S&D SpookySpoodz</p>
+    
+        <div class="footer-links">
+            <a href="returns.html">Shipping & Returns</a>
+        </div>
+    
+        <p class="credit">
+            This site was created by
+            <a href="#">HauntWeb Studio</a>
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active'); // hamburger animation
+            nav.classList.toggle('active');    // dropdown open
+        });
+    </script>
+
+</body>
+
+</html>

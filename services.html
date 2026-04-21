@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | S&D SpookySpoodz</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- FONT AWESOME -->
@@ -20,7 +19,7 @@
         <img src="IMG/S_D_SpookySpoodz-removebg-preview.png" alt="Logo">
     </div>
 
-    <!-- NAV -->
+    <!-- NAVIGATION -->
     <nav>
         <div class="menu-toggle" id="menu-toggle">
             <span></span>
@@ -28,17 +27,119 @@
             <span></span>
         </div>
 
-        <ul id="nav-links">
+        <ul id="nav-links" class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html" class="active">Our Services</a></li>
-            <li><a href="#">Available Spiders</a></li>
-            <li><a href="#">Enclosures</a></li>
+            <li><a href="spiders.html">Available Spiders</a></li>
+            <li><a href="enclosures.html">Enclosures</a></li>
             <li><a href="#">Spider Care Guide</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
 
-    <!-- MOBILE MENU SCRIPT -->
+    <!-- HERO -->
+    <section class="spiders-hero">
+        <h2>Our Services</h2>
+        <p>Everything you need for your jumping spider journey — all in one place.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="product-section">
+
+        <div class="product-grid">
+
+            <!-- SERVICE 1 -->
+            <div class="product-card service-card">
+                <img src="IMG/jumper1.webp" alt="Jumping Spider">
+
+                <h3>Jumping Spiders</h3>
+                <p class="short-text">Healthy, hand-raised spiders ready for loving homes.</p>
+
+                <button class="learn-toggle">Learn More ▼</button>
+
+                <div class="more-text">
+                    <p>
+                        Healthy, well-cared-for slings raised in a calm environment with attention and care.
+                    </p>
+                    <p>
+                        We also provide guidance on feeding, molting, and enclosure setup.
+                    </p>
+                </div>
+
+                <a href="spiders.html" class="btn">View Available</a>
+            </div>
+
+            <!-- SERVICE 2 -->
+            <div class="product-card service-card">
+                <img src="IMG/popcorn_enclosure.webp" alt="Enclosure">
+
+                <h3>Custom Enclosures</h3>
+                <p class="short-text">Designed for both function and style.</p>
+
+                <button class="learn-toggle">Learn More ▼</button>
+
+                <div class="more-text">
+                    <p>
+                        Thoughtfully designed enclosures built for comfort, safety, and style.
+                    </p>
+                </div>
+
+                <a href="enclosures.html" class="btn">View Enclosures</a>
+            </div>
+
+            <!-- SERVICE 3 -->
+            <div class="product-card service-card">
+                <img src="IMG/jumper2.webp" alt="Care Guide">
+
+                <h3>Care Guidance</h3>
+                <p>Simple, beginner-friendly advice so your spider thrives.</p>
+
+                <button class="learn-toggle">Learn More ▼</button>
+
+                <div class="more-text">
+                    <p>
+                        Honest guidance from real experience — no pressure, just help.
+                    </p>
+                </div>
+
+                <a href="care.html" class="btn">Learn More</a>
+            </div>
+
+            <!-- SERVICE 4 -->
+            <div class="product-card service-card">
+                <img src="IMG/packing.webp" alt="Packaging">
+
+                <h3>Safe Packaging</h3>
+                <p>Carefully packed to ensure safe, stress-free arrival.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURE -->
+    <section class="feature">
+        <div class="feature-text">
+            <h2>Simple. Safe. Thoughtful.</h2>
+            <p>Everything is designed to give your spider the best possible start.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 S&D SpookySpoodz</p>
+    
+        <div class="footer-links">
+            <a href="returns.html">Shipping & Returns</a>
+        </div>
+    
+        <p class="credit">
+            This site was created by
+            <a href="#">HauntWeb Studio</a>
+        </p>
+    </footer>
+
+    <!-- JS -->
     <script>
         const toggle = document.getElementById('menu-toggle');
         const nav = document.getElementById('nav-links');
@@ -46,131 +147,7 @@
         toggle.addEventListener('click', () => {
             nav.classList.toggle('active');
         });
-    </script>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h2>Our Services</h2>
-        <p>Everything you need for your jumping spider journey — all in one place.</p>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services">
-
-        <div class="service-card">
-            <img src="IMG/jumper1.webp" alt="Jumping Spider">
-        
-            <h3>Jumping Spiders</h3>
-            <p class="short-text">Healthy, hand-raised spiders ready for loving homes.</p>
-        
-            <!-- TOGGLE BUTTON -->
-            <button class="learn-toggle">Learn More ▼</button>
-        
-            <!-- HIDDEN CONTENT -->
-            <div class="more-text">
-                <p>
-                    Healthy, well‑cared‑for slings raised in a calm, attentive home environment. Each little one is handled with the same
-                    care and curiosity that started our journey in the first place.
-                </p>
-                <p>
-                    We also provide guidance on feeding, molting, and enclosure setup so you feel confident bringing your
-                    new spood home.
-                </p>
-            </div>
-        
-            <a href="#" class="btn">View Available</a>
-        </div>
-
-        <div class="service-card">
-            <img src="IMG/popcorn_enclosure.webp" alt="Enclosure">
-        
-            <h3>Custom Enclosures</h3>
-            <p class="short-text">Beautiful, safe enclosures designed for both function and style.</p>
-        
-            <!-- TOGGLE BUTTON -->
-            <button class="learn-toggle">Learn More ▼</button>
-        
-            <!-- HIDDEN CONTENT -->
-            <div class="more-text">
-                <p>
-                    Thoughtfully designed enclosures built for comfort, safety, and style. Whether you need a simple starter
-                    setup or
-                    something a bit more unique, we create homes that help your spiders thrive.
-                </p>
-        
-            </div>
-        
-            <a href="#" class="btn">View Enclosures</a>
-        </div>
-
-        <div class="service-card">
-            <img src="IMG/jumper2.webp" alt="Care Guide">
-
-            <h3>Care Guidance</h3>
-            <p>Simple, beginner-friendly advice so your spider thrives.</p>
-
-            <!-- TOGGLE BUTTON -->
-            <button class="learn-toggle">Learn More ▼</button>
-            
-            <!-- HIDDEN CONTENT -->
-            <div class="more-text">
-                <p>
-                    From choosing your first sling to understanding basic care, we’re here to share what we’ve learned along the way. No
-                    pressure, no judgment — just honest guidance from someone who’s been exactly where you are.
-                </p>
-            
-            </div>
-            <a href="#" class="btn">Learn More</a>
-        </div>
-
-        <div class="service-card">
-            <img src="IMG/packing.webp" alt="Support">
-
-            <h3>Safe, Secure Packaging</h3>
-            <p>Every order is packed with care to ensure your spider and/or enclosure arrives safely and stress‑free.</p>
-            
-        </div>
-
-    </section>
-
-    <!-- PROCESS -->
-    <section class="process">
-        <h2>How It Works</h2>
-
-        <div class="steps">
-            <div class="step">
-                <span>1</span>
-                <h4>Choose</h4>
-                <p>Pick your spider or enclosure.</p>
-            </div>
-
-            <div class="step">
-                <span>2</span>
-                <h4>Prepare</h4>
-                <p>We guide setup and care basics.</p>
-            </div>
-
-            <div class="step">
-                <span>3</span>
-                <h4>Bring Home</h4>
-                <p>Your spood settles in comfortably.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-        <h2>Ready to Start?</h2>
-        <a href="#" class="btn">Contact Us</a>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 S&D SpookySpoodz</p>
-        <a href="returns.html">Shipping & Returns</a>
-    </footer>
-
-    <script>
         const toggles = document.querySelectorAll(".learn-toggle");
 
         toggles.forEach(btn => {
@@ -179,7 +156,6 @@
 
                 moreText.classList.toggle("open");
 
-                // Change button text
                 if (moreText.classList.contains("open")) {
                     btn.textContent = "Show Less ▲";
                 } else {
