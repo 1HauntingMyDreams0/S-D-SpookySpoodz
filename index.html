@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S&D SpookySpoodz</title>
+    <title>Home | S&D SpookySpoodz</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -15,124 +15,153 @@
 
 <body>
 
-    <!-- LOGO BANNER -->
+    <!-- LOGO -->
     <div class="logo-banner">
-        <img src="IMG/S_D_SpookySpoodz-removebg-preview.png" alt="S&D SpookySpoodz Logo">
+        <img src="IMG/S_D_SpookySpoodz-removebg-preview.png" alt="Logo">
     </div>
 
     <!-- NAV -->
     <nav>
-
-        <!-- HAMBURGER BUTTON -->
         <div class="menu-toggle" id="menu-toggle">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <!-- NAV LINKS -->
         <ul id="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Available Spiders</a></li>
-            <li><a href="#">Enclosures</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="spiders.html">Available Spiders</a></li>
+            <li><a href="enclosures.html">Enclosures</a></li>
             <li><a href="#">Spider Care Guide</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
-
     </nav>
-</header>
-
-<!-- SCRIPT -->
-<script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav-links');
-
-    toggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-</script>
 
     <!-- HERO -->
     <section class="hero">
-        <h2>Regal Jumping Spiders</h2>
-        <p>Captive bred • Healthy • Beautiful morphs</p>
+        <h2>Where Every Spider's Home Is Spun With Care</h2>
+        <p>
+            We specialize in healthy, hand-raised jumping spiders and beautifully decorated enclosures.
+        </p>
 
-        <div class="featured-card">
-            <img src="IMG/female_regal.png" alt="Regal Jumping Spider">
-            <h3>Featured: Female Regal</h3>
-            <p class="price">$25</p>
-            <a href="#" class="btn">View Details</a>
+        <!-- FEATURED WRAPPER -->
+        <div class="featured-wrapper">
+
+            <!-- SPIDER -->
+            <a href="spiders.html" class="featured-link">
+                <div class="featured-card">
+                    <img src="IMG/female_regal.png" alt="Regal Spider">
+                    <h3>Featured: Female Regal</h3>
+                    <p class="price">$25</p>
+                    <span class="btn">View Details</span>
+                </div>
+            </a>
+
+            <!-- ENCLOSURE -->
+            <a href="enclosures.html" class="featured-link">
+                <div class="featured-card">
+                    <img src="IMG/enclosure1.jpg" alt="Enclosure">
+                    <h3>Featured: Custom Enclosure</h3>
+                    <p class="price">$40</p>
+                    <span class="btn">View Details</span>
+                </div>
+            </a>
+
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="about">
-        <h2>Beyond the Ordinary</h2>
+<section class="about">
+    <h2>Beyond the Ordinary</h2>
 
-        <p>
-            Hi, I’m Destinee — a SAHM who found an unexpected passion in the tiniest, most curious moment.
-            During a simple garage sale, a little jumping spider crossed my path, and something just clicked.
-        </p>
+    <p>
+        Hi, I’m Destinee — a SAHM who found an unexpected passion in the tiniest, most curious moment.
+        During a simple garage sale, a little jumping spider crossed my path, and something just clicked.
+    </p>
 
-        <p>
-            That spark turned into research, new enclosures, and eventually caring for a growing collection of
-            slings — each one deepening our passion for the hobby.
-        </p>
+    <p>
+        That spark turned into late-night research, new enclosures, and eventually my husband and I
+        welcoming more spiders into our home.
+    </p>
 
-        <p>
-            What began as a chance encounter has grown into a family project and a dream. We now focus on
-            raising healthy spiders and creating quality enclosures.
-        </p>
+    <p>
+        Not long after, a friend’s spider had babies, and we took them in with open arms. Suddenly,
+        we weren’t just hobbyists — we were caretakers of a growing collection of slings, each one
+        teaching us something new and deepening our love for the hobby.
+    </p>
 
-        <p>
-            It’s been an unexpected journey, and we’re excited to share it with you.
-        </p>
-    </section>
+    <p>
+        What began as a chance encounter has grown into a family project and a dream. Now, I’m building
+        a small business focused on creating thoughtful, quality enclosures and offering healthy,
+        well-raised spider babies to others who share this fascination.
+    </p>
 
-    <!-- YOUTUBE -->
-    <section class="youtube">
-        <h2><i class="fab fa-youtube"></i> Watch Our Spoods</h2>
+    <p>
+        It’s been an unexpected journey, but one that’s brought so much joy, purpose, and connection
+        into our lives — and I’m excited to share that with you.
+    </p>
+</section>
 
-        <div class="video-container">
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/FuzJ-OlL_Fk?autoplay=1&mute=1&loop=1&playlist=FuzJ-OlL_Fk&controls=0&modestbranding=1&rel=0"
-            title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+<section class="youtube">
+    <h2>Watch Our Spoods in Action</h2>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/FuzJ-OlL_Fk?autoplay=1&mute=1&loop=1&playlist=FuzJ-OlL_Fk"
+            allow="autoplay; encrypted-media" allowfullscreen>
         </iframe>
-        </div>
+    </div>
 
-        <a href="#" class="yt-btn">
-            <i class="fab fa-youtube"></i> Subscribe on YouTube
+</section>
+
+<section class="social">
+    <h2>Follow Our Journey</h2>
+
+    <div class="social-buttons">
+        <a href="#" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
         </a>
-    </section>
 
-    <!-- SOCIAL -->
-    <section class="social">
-        <h2>Follow Us</h2>
+        <a href="#" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
 
-        <div class="social-buttons">
-            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
-        </div>
-    </section>
+        <a href="#" target="_blank">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+    </div>
+</section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 S&D SpookySpoodz • <a href="#">Return Policy</a></p>
+        <p>&copy; 2026 S&D SpookySpoodz</p>
+        <a href="returns.html">Shipping & Returns</a>
     </footer>
 
+    <!-- NAV SCRIPT -->
     <script>
-        const iframe = document.querySelector("iframe");
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        const aboutSection = document.querySelector('.about');
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    iframe.src = iframe.src; // reloads → triggers autoplay
+                    aboutSection.classList.add('show');
                 }
             });
-        }, { threshold: 0.6 });
+        }, {
+            threshold: 0.3
+        });
 
-        observer.observe(iframe);
+        observer.observe(aboutSection);
     </script>
 
 </body>
