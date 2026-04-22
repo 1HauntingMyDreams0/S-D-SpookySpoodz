@@ -86,21 +86,21 @@ section h2 {
     border-top: 1px solid var(--accent-soft);
     border-bottom: 1px solid var(--accent-soft);
 
-    box-shadow: 0 0 15px rgba(0, 255, 159, 0.15);
+    box-shadow: none;
 
     display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 15px 20px;
+        gap: 20px;
 }
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    list-style: none;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8),
-        0 0 15px rgba(0, 255, 159, 0.2);
+    box-shadow: none;
 }
 
 .nav-links li {
