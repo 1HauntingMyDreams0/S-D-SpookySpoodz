@@ -15,6 +15,7 @@
     --glow-small: 0 0 5px rgba(0, 255, 159, 0.4);
     --glow-medium: 0 0 10px rgba(0, 255, 159, 0.6);
     --glow-large: 0 0 20px rgba(0, 255, 159, 0.8);
+    --gradient-glow: linear-gradient(90deg, #00ff9f, #ff8fcf);
 }
 
 /* =========================
@@ -700,4 +701,420 @@ CONTACT SECTION
 .product-card {
     flex: 0 1 280px;
     /* keeps cards consistent and centered */
+}
+
+/* =========================
+   BENEFITS SECTION
+========================= */
+
+.benefits {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.benefits h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #ffb6d9; /* soft pink */
+}
+
+/* GRID */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS */
+.benefit-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+/* HOVER EFFECT */
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 182, 217, 0.2);
+}
+
+/* ICONS */
+.benefit-card i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff8fcf;
+}
+
+/* TITLES */
+.benefit-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* TEXT */
+.benefit-card p {
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+/* =========================
+PINK ACCENT ENHANCEMENTS (NON-DESTRUCTIVE)
+========================= */
+
+/* Add secondary color variable */
+:root {
+    --accent-pink: #ff8fcf;
+    --accent-pink-soft: rgba(255, 143, 207, 0.25);
+}
+
+/* NAV HOVER (blend pink + green) */
+.nav-links a:hover {
+    color: var(--accent-pink);
+    text-shadow:
+        0 0 10px rgba(255, 143, 207, 0.6),
+        0 0 8px rgba(0, 255, 159, 0.4);
+}
+
+/* HERO HEADLINE POP */
+.hero h1 {
+    color: var(--accent-pink);
+    text-shadow:
+        0 0 15px rgba(255, 143, 207, 0.6),
+        0 0 10px rgba(0, 255, 159, 0.3);
+}
+
+/* BUTTON HOVER UPGRADE */
+.btn:hover {
+    box-shadow:
+        0 0 15px rgba(255, 143, 207, 0.5),
+        0 0 10px rgba(0, 255, 159, 0.4);
+}
+
+/* PRODUCT CARD HOVER MIX */
+.product-card:hover {
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(255, 143, 207, 0.4),
+        0 0 15px rgba(0, 255, 159, 0.3);
+}
+
+/* CARD ICONS (tie into pink theme) */
+.product-card i {
+    color: var(--accent-pink);
+}
+
+/* REVIEW CARDS subtle tint */
+.review-card {
+    border: 1px solid rgba(255, 143, 207, 0.15);
+}
+
+/* BENEFITS SECTION (blend instead of replace) */
+.benefits h2 {
+    color: var(--accent-pink);
+}
+
+.benefit-card {
+    border: 1px solid rgba(255, 143, 207, 0.2);
+}
+
+.benefit-card:hover {
+    box-shadow:
+        0 0 20px rgba(255, 143, 207, 0.4),
+        0 0 12px rgba(0, 255, 159, 0.3);
+}
+
+.benefit-card i {
+    color: var(--accent-pink);
+}
+
+/* FOOTER LINKS */
+.footer-links a {
+    color: var(--accent-pink);
+}
+
+.footer-links a:hover {
+    text-shadow:
+        0 0 10px rgba(255, 143, 207, 0.6),
+        0 0 6px rgba(0, 255, 159, 0.4);
+}
+
+/* =========================
+GRADIENT GLOW BORDER
+========================= */
+
+.gradient-glow {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* glowing layer */
+.gradient-glow::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+
+    background: linear-gradient(90deg, #00ff9f, #ff8fcf, #00ff9f);
+    background-size: 200% 200%;
+
+    border-radius: inherit;
+
+    z-index: -1;
+
+    filter: blur(8px);
+    opacity: 0.6;
+
+    animation: glowShift 6s linear infinite;
+}
+
+/* animation */
+@keyframes glowShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.hero h1 {
+    background: linear-gradient(90deg, #00ff9f, #ff8fcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 10px rgba(255, 143, 207, 0.5),
+        0 0 10px rgba(0, 255, 159, 0.4);
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    background: linear-gradient(90deg, #00ff9f, #ff8fcf);
+    color: #000;
+
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+
+    border-radius: 20px;
+}
+
+/* =========================
+HOVER-ONLY GRADIENT GLOW (CLEAN VERSION)
+========================= */
+
+.hover-glow::before {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::before {
+    opacity: 0.7;
+}
+
+/* Slight lift effect */
+.hover-glow:hover {
+    transform: translateY(-5px) scale(1.01);
+    transition: all 0.3s ease;
+}
+
+/* Make sure cards animate smoothly */
+.product-card {
+    transition: all 0.3s ease;
+}
+
+/* Feature section subtle glow divider */
+.feature {
+    position: relative;
+}
+
+.feature::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+
+    background: linear-gradient(90deg, transparent, #00ff9f, #ff8fcf, transparent);
+    opacity: 0.4;
+}
+
+.card-icon i {
+    background: linear-gradient(90deg, #00ff9f, #ff8fcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+GRADIENT GLOW BASE (REQUIRED)
+========================= */
+
+.gradient-glow {
+    position: relative;
+    z-index: 1;
+}
+
+/* glowing layer */
+.gradient-glow::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+
+    background: linear-gradient(90deg, #00ff9f, #ff8fcf, #00ff9f);
+    background-size: 200% 200%;
+
+    border-radius: inherit;
+
+    z-index: -1;
+
+    filter: blur(10px);
+    opacity: 0.6;
+
+    animation: glowShift 6s linear infinite;
+}
+
+/* animation */
+@keyframes glowShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/* =========================
+HOVER ACTIVATION
+========================= */
+
+.hover-glow::before {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::before {
+    opacity: 0.8;
+}
+
+/* lift effect */
+.hover-glow:hover {
+    transform: translateY(-5px) scale(1.01);
+}
+
+/* smooth animation */
+.product-card,
+.contact-form,
+.btn {
+    transition: all 0.3s ease;
+}
+
+.product-card,
+.contact-form {
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(6px);
+}
+
+.product-card,
+.contact-form {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product-card,
+.feature {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* =========================
+FINAL WORKING GLOW SYSTEM
+========================= */
+
+.gradient-glow {
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: visible;
+    /* IMPORTANT: allow glow to show */
+}
+
+/* glow layer */
+.gradient-glow::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+
+    background: linear-gradient(90deg, #00ff9f, #ff8fcf, #00ff9f);
+    background-size: 200% 200%;
+
+    border-radius: inherit;
+
+    z-index: -1;
+
+    filter: blur(12px);
+    opacity: 0.7;
+
+    animation: glowShift 5s linear infinite;
+}
+
+/* animation */
+@keyframes glowShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/* hover control */
+.hover-glow::before {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-glow:hover::before {
+    opacity: 0.9;
+}
+
+/* lift */
+.hover-glow:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+/* =========================
+CRITICAL FIXES
+========================= */
+
+/* Make backgrounds slightly transparent so glow shows */
+.product-card,
+.contact-form,
+.feature {
+    background: rgba(20, 20, 20, 0.75) !important;
+}
+
+/* Allow glow to escape */
+.product-card,
+.contact-form,
+.feature {
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure parent doesn't clip glow */
+.product-grid,
+.about-grid {
+    overflow: visible;
 }

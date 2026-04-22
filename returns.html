@@ -19,19 +19,19 @@
     <div class="logo-banner">
         <img src="IMG/S_D_SpookySpoodz-removebg-preview.png" alt="Logo">
     </div>
-    
+
     <!-- NAV -->
     <header>
-    
+
         <nav class="navbar">
-    
+
             <!-- Hamburger -->
             <div class="menu-toggle" id="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-    
+
             <!-- Menu -->
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -41,86 +41,86 @@
                 <li><a href="care.html">Spider Care Guide</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-    
+
         </nav>
 
-    <!-- HERO -->
-    <section class="spiders-hero">
-        <h2>Shipping & Returns</h2>
-        <p>Clear, simple policies so you can order with confidence.</p>
-    </section>
+        <!-- HERO -->
+        <section class="spiders-hero">
+            <h2>Shipping & Returns</h2>
+            <p>Clear, simple policies so you can order with confidence.</p>
+        </section>
 
-    <!-- POLICY SECTION -->
-    <section class="product-section">
+        <!-- POLICY SECTION -->
+        <section class="product-section">
 
-        <div class="product-grid">
+            <div class="product-grid">
 
-            <!-- SHIPPING -->
-            <div class="product-card policy-card">
-                <h3>Shipping Times</h3>
+                <!-- SHIPPING -->
+                <div class="product-card policy-card gradient-glow hover-glow">
+                    <h3>Shipping Times</h3>
 
-                <p><strong>Live Spiders:</strong> Ship with 2-day delivery to ensure safety and speed.</p>
+                    <p><strong>Live Spiders:</strong> Ship with 2-day delivery to ensure safety and speed.</p>
 
-                <p><strong>Enclosures:</strong> Shipping speed depends on the option selected at checkout.</p>
+                    <p><strong>Enclosures:</strong> Shipping speed depends on the option selected at checkout.</p>
+                </div>
+
+                <!-- INTERNATIONAL -->
+                <div class="product-card policy-card gradient-glow hover-glow">
+                    <h3>International Shipping</h3>
+                    <p>We currently do not offer international shipping at this time.</p>
+                </div>
+
+                <!-- RETURNS -->
+                <div class="product-card policy-card gradient-glow hover-glow">
+                    <h3>Returns & Guarantees</h3>
+
+                    <p>We stand behind the quality of our spiders and enclosures.</p>
+
+                    <p>✅ <strong>30-Day Returns (Enclosures)</strong></p>
+                    <p>Unused enclosures can be returned within 30 days in original condition.</p>
+
+                    <p>✅ <strong>1-Week Live Arrival Guarantee</strong></p>
+                    <p>If your spider does not survive within the first week, we will replace it with proof.</p>
+
+                    <p>✅ <strong>Replacements</strong></p>
+                    <p>Processed quickly after review. Shipping may apply depending on situation.</p>
+                </div>
+
             </div>
 
-            <!-- INTERNATIONAL -->
-            <div class="product-card policy-card">
-                <h3>International Shipping</h3>
-                <p>We currently do not offer international shipping at this time.</p>
+        </section>
+
+        <!-- FEATURE -->
+        <section class="feature">
+            <div class="feature-text">
+                <h2>Order with confidence</h2>
+                <p>Your spoods are packed and shipped with care every step of the way.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 S&D SpookySpoodz</p>
+
+            <div class="footer-links">
+                <a href="returns.html">Shipping & Returns</a>
             </div>
 
-            <!-- RETURNS -->
-            <div class="product-card policy-card">
-                <h3>Returns & Guarantees</h3>
+            <p class="credit">
+                This site was created by
+                <a href="#">HauntWeb Studio</a>
+            </p>
+        </footer>
 
-                <p>We stand behind the quality of our spiders and enclosures.</p>
+        <!-- JS -->
+        <script>
+            const toggle = document.getElementById("menu-toggle");
+            const nav = document.getElementById("nav-links");
 
-                <p>✅ <strong>30-Day Returns (Enclosures)</strong></p>
-                <p>Unused enclosures can be returned within 30 days in original condition.</p>
-
-                <p>✅ <strong>1-Week Live Arrival Guarantee</strong></p>
-                <p>If your spider does not survive within the first week, we will replace it with proof.</p>
-
-                <p>✅ <strong>Replacements</strong></p>
-                <p>Processed quickly after review. Shipping may apply depending on situation.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- FEATURE -->
-    <section class="feature">
-        <div class="feature-text">
-            <h2>Order with confidence</h2>
-            <p>Your spoods are packed and shipped with care every step of the way.</p>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 S&D SpookySpoodz</p>
-
-        <div class="footer-links">
-            <a href="returns.html">Shipping & Returns</a>
-        </div>
-
-        <p class="credit">
-            This site was created by
-            <a href="#">HauntWeb Studio</a>
-        </p>
-    </footer>
-
-    <!-- JS -->
-    <script>
-        const toggle = document.getElementById("menu-toggle");
-        const nav = document.getElementById("nav-links");
-
-        toggle.addEventListener("click", () => {
-            nav.classList.toggle("active");
-        });
-    </script>
+            toggle.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        </script>
 
 </body>
 
