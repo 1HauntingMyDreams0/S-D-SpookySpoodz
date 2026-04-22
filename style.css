@@ -175,37 +175,6 @@ ABOUT / OUR STORY (CENTER FIX)
 }
 
 /* =========================
-SPIDERS / INNER PAGE HERO
-========================= */
-
-.spiders-hero {
-    text-align: center;
-    padding: 3rem 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-
-    backdrop-filter: blur(4px);
-    border-radius: 12px;
-}
-
-.spiders-hero h2 {
-    background: linear-gradient(90deg, #00ff9f, #ff8fcf);
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow:
-        0 0 10px rgba(255, 143, 207, 0.5),
-        0 0 10px rgba(0, 255, 159, 0.4);
-}
-
-.spiders-hero p {
-    color: var(--text-muted);
-    margin-top: 0.5rem;
-}
-
-/* =========================
 6. BUTTONS
 ========================= */
 .btn {
