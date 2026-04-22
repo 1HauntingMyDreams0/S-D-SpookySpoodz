@@ -181,14 +181,11 @@ SPIDERS / INNER PAGE HERO
 .spiders-hero {
     text-align: center;
     padding: 3rem 1rem;
-
     max-width: 800px;
     margin: 0 auto;
 
-    .spiders-hero {
-            backdrop-filter: blur(4px);
-            border-radius: 12px;
-        }
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
 }
 
 .spiders-hero h2 {
@@ -793,10 +790,21 @@ footer {
 /* =========================
 12. MOBILE
 ========================= */
+
 @media (max-width: 768px) {
 
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
     .nav-links {
+        width: 100%;
         flex-direction: column;
+
         max-height: 0;
         overflow: hidden;
 
@@ -806,7 +814,6 @@ footer {
 
     .nav-links.active {
         max-height: 500px;
-
         opacity: 1;
     }
 
