@@ -147,6 +147,11 @@
         </p>
     </footer>
 
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- JS -->
     <script>
         const toggle = document.getElementById('menu-toggle');
@@ -169,6 +174,27 @@
                 } else {
                     btn.textContent = "Learn More ▼";
                 }
+            });
+        });
+    </script>
+
+    <script>
+        const backToTop = document.getElementById("backToTop");
+
+        // Show button after scrolling
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+        // Scroll to top
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
             });
         });
     </script>
